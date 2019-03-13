@@ -1,0 +1,23 @@
+config:
+  service:
+    name: jackson-api
+    namespace: default
+    port: 8080
+    labelName: jackson
+    canaryWeight: 100
+    stableWeight: 0
+    match:
+      uri:
+        prefix: "/api"
+  appName: spring-boot-api
+  enableVirtualService: true
+  enableDestinationRule: true
+subcomponents:
+  canary:
+    config:
+      appName: spring-boot-api
+      fullnameOverride: api-deploy-canary
+  stable:
+    config:
+      appName: spring-boot-api
+      fullnameOverride: api-deploy-stable
