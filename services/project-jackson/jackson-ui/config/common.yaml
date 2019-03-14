@@ -7,8 +7,8 @@ config:
   fullnameOverride: spring-boot-ui
   appName: spring-boot-ui
   image:
-    repository: mtarng/jackson-ui
-    tag: v1.0
+    repository: yradsmikwalmartacr.azurecr.io/project-jackson-ui
+    tag: "1.0"
   enableVirtualService: true
   enableDestinationRule: true
 # subcomponents:
