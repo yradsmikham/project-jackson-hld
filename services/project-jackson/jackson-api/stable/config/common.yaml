@@ -1,6 +1,6 @@
 config:
   image:
     repository: yradsmikwalmartacr.azurecr.io/project-jackson-api
-    tag: 1.0
+    tag: "1.0"
   replicas: 1
   version: stable
